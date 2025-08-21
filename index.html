@@ -22,6 +22,12 @@
             overflow: hidden;
         }
 
+        .flex-container {
+            display: flex;
+            justify-content: space-around;
+        }
+
+
         .header {
             padding: 40px;
         }
@@ -41,11 +47,52 @@
 
         }
 
-        .flex-container {
-            display: flex;
+        .coluna-1 {
             background-color: #006A6A;
-            justify-content: space-around;
+            width: 50%;
             padding: 20px;
+            color: #FFF;
+        }
+
+        .coluna-2 {
+            background-color: #009E9E;
+            width: 50%;
+            padding: 20px;
+            color: #FFF;
+        }
+
+        .subscripiton-title {
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .price {
+            font-size: 26px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        .month {
+            font-size: 15px;
+            font-style: italic;
+            margin-left: 15px;
+        }
+
+        .button-subscription {
+            width: 100%;
+            padding: 15px 32px;
+            background-color: #CCCCCC;
+            color: #006A6A;
+            font-size: 16px;
+            border-radius: 4px;
+            border: none;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        .button-subscription:hover {
+            background-color: #E9E9E9;
         }
 
     </style>
@@ -66,10 +113,21 @@
             </div>
         </div>
         <div class="flex-container">
-            <div>
-                Coluna 1
+            <div class="coluna-1">
+                <div class="subscripiton-title">
+                    Assinatura mensal:
+                </div>
+                <div>
+                    <span class="price">R$ 99,99</span> <span class="month">por mês.</span> <br>
+                    Cancele a qualquer momento.
+                </div>
+                <div>
+                    <button class="button-subscription">
+                        Assine Agora
+                    </button>
+                </div>
             </div>
-            <div>
+            <div class="coluna-2">
                 Coluna 2
             </div>
         </div>
